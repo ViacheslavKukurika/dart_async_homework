@@ -1,5 +1,8 @@
-import 'package:dart_async_homework/dart_async_homework.dart' as dart_async_homework;
+import 'package:dart_async_homework/hw_futures.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_async_homework.calculate()}!');
+  // Task 1: Асинхронне отримання імені
+
+  Future<void> main() async {
+    final name = await fetchName();
+    print('Мене звати $name');
 }
